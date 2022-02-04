@@ -1,0 +1,420 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body {
+	display: block;
+	margin: 0px;
+	background-color: #f2e8df;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-size-adjust: 100%;
+	width: 100%;
+	height: 100%;
+}
+
+.head {
+	background-color: #036666;
+	width: 100%;
+	height: 56.75vh;
+	position: relative;
+	overflow: hidden;
+	display: grid;
+	grid-template-columns: 0.5fr 1.5fr;
+	grid-template-rows: repeat(3, 1fr);
+	grid-template-areas: "homepicture title";
+}
+
+#homepicture {
+	background-color: #036666;
+	width: 100%;
+	height: 56.75vh;
+	position: relative;
+	grid-area: homepicture;
+}
+
+img.homepictureimg {
+	height: 59vh;
+	width: auto;
+	position: relative;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+#title {
+	grid-area: title;
+	vertical-align: middle;
+	justify-content: center;
+	margin: auto 0px;
+}
+
+#title h1 {
+	font-size: 5rem;
+	margin: auto;
+	color: white;
+	font-family: "Quicksand";
+	font-weight: bold;
+}
+
+#title p {
+	font-size: 1.5rem;
+	margin: auto;
+	color: white;
+	font-family: Caveat;
+	grid-area: desc;
+}
+
+#title button {
+	font-family: 'Quicksand';
+	font-size: 1rem;
+	width: 11vw;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+	text-align: center;
+}
+
+button {
+	background-color: #67b99a;
+	border: double 3px #036666;
+	padding: 1vw;
+	cursor: pointer;
+	border-radius: 5px;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+	-webkit-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+	transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+button::after {
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+	opacity: 0;
+	text-decoration: underline;
+	-webkit-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+	transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+button:hover {
+	text-decoration-line: underline;
+	text-decoration-thickness: 0.2vw;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+	-webkit-transform: scale(1, 1);
+	transform: scale(1.05, 1.02);
+}
+
+button:hover::after {
+	opacity: 1;
+}
+
+.aboutp {
+	margin-left: 30vw;
+	margin-right: 59vw;
+	width: 12vw;
+	float: left;
+	position: relative;
+	font-family: "Quicksand";
+	color: white;
+	font-size: 1.2vw;
+}
+
+#content {
+	background-color: #f8f6f6;
+	border-radius: 0.5vw;
+	padding: 0.8vw;
+	margin: 1vw;
+	margin-bottom: 3vw;
+	width: 98%;
+	box-shadow: 0.2vw 0.2vw 0.2vw #ccc;
+	display: block;
+	overflow: hidden;
+}
+
+.aspect {
+	display: grid;
+	width: 100%;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: auto;
+	grid-template-areas: "mentalhealthaspect physicalhealthaspect socioemotionalhealthaspect";
+	grid-column-gap: 0.5vw;
+	grid-auto-flow: column;
+	color: #004d40;
+	margin-left: 3.6%;
+	margin-right: 25%;
+}
+
+.aspecthead {
+	text-align: center;
+	margin: auto;
+	margin-top: 10px;
+}
+
+.aspectimg {
+	overflow: hidden;
+	width: 95%;
+	height: 47.209653092006036vh;
+	border: solid 2px #036666;
+	align-items: center;
+	align-content: center;
+}
+
+.aspecttext {
+	font-size: 1.2rem;
+	text-align: justify;
+	font-family: 'Quicksand';
+}
+
+.mentalhealthaspect {
+	grid-area: mentalhealthaspect;
+	width: 25vw;
+}
+
+.physicalhealthaspect {
+	grid-area: physicalhealthaspect;
+	width: 25vw;
+}
+
+.socioemotionalhealthaspect {
+	grid-area: socioemotionalhealthaspect;
+	width: 25vw;
+}
+
+.aspecthead {
+	font-size: 2rem;
+	font-family: "Caveat";
+	color: #036666;
+	text-shadow: 0.2vw 0.2vw 0.2vw #99e2b4;
+}
+
+.webpages {
+	margin: 3vw auto 1vw auto;
+	padding: 10px;
+	display: grid;
+	grid-template-columns: 0.2fr 1.5fr 0.3fr 1.5fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-template-areas: "wpimgsmh wpdescmh wpdescmh wpdescmh" "wpdescaw wpdescaw wpdescaw wpimgsaw" "wpimgssh wpdescsh wpdescsh wpdescsh";
+	grid-row-gap: 2.5vw;
+	grid-column-gap: 1vw;
+}
+
+#wpimgsmh {
+	grid-area: wpimgsmh;
+	margin-left: 1vw;
+}
+
+#wpdescmh {
+	grid-area: wpdescmh;
+	margin-right: 1vw;
+}
+
+#wpimgssh {
+	grid-area: wpimgssh;
+	margin-left: 1vw;
+}
+
+#wpdescsh {
+	grid-area: wpdescsh;
+	margin-right: 1vw;
+}
+
+#wpimgsaw {
+	grid-area: wpimgsaw;
+	text-align: center;
+	margin-right: 1vw;
+}
+
+#wpdescaw {
+	grid-area: wpdescaw;
+	margin-left: 1vw;
+}
+
+.webpages img {
+	max-width: 350px;
+	max-height: 350px;
+	align-content: center;
+	justify-content: center;
+}
+
+.pageheads {
+	margin: auto;
+	margin-bottom: 1vw;
+	padding: auto;
+	float: left;
+	text-align: center;
+	font-family: "Caveat";
+	font-size: 1.6rem;
+	color: #036666;
+	text-shadow: 0.2vw 0.2vw 0.2vw #99e2b4;
+}
+
+.webpages p {
+	text-align: justify;
+	margin: auto;
+	margin-bottom: 1vw;
+	padding: auto;
+	min-width: 20vw;
+	float: left;
+	font-size: 1.2rem;
+	line-height: auto;
+	font-family: "Quicksand";
+}
+
+.wpbuttons {
+	text-align: center;
+	min-width: 14vw;
+	background-color: #67b99a;
+	border: double 0.34vw #036666;
+	text-decoration: none;
+	position: relative;
+	font-family: "Quicksand";
+	color: white;
+	font-size: 1.2rem;
+	padding: 1vw;
+	border-radius: 0.29vw;
+	display: inline-block;
+}
+
+.click {
+	font-weight: bold;
+	font-style: italic;
+}
+
+#hr {
+	background: none;
+	clear: both;
+	float: none;
+	height: 1px;
+	border: none;
+	margin: -1px 0;
+}
+@media screen and (max-width: 460px) {
+	div#title {
+		margin-top: 1.2rem;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: left;
+		flex-direction: column;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+@media only screen and (max-width:768px) {
+	#content {
+		height: fit-content;
+	}
+	.head {
+		height: 30vh;
+	}
+	img.homepictureimg {
+		height: 30vh;
+		margin-top: auto;
+		margin-bottom: auto;
+	}
+	div#title {
+		margin-top: 1.2rem;
+	}
+	#title h1 {
+		font-size: 3rem;
+		margin: 0px;
+		color: white;
+		font-family: "Quicksand";
+		font-weight: bold;
+	}
+	#title p {
+		font-size: 1.05rem;
+		margin: auto;
+		color: white;
+		font-family: Caveat;
+		grid-area: desc;
+	}
+	#title button {
+		font-family: 'Quicksand';
+		font-size: 1rem;
+		height: fit-content;
+		width: fit-content;
+	}
+	.aspect {
+		width: 90vw;
+		text-align: center;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1.2fr 1.2fr 1.2fr;
+		grid-template-areas: "mentalhealthaspect" "physicalhealthaspect" "socioemotionalhealthaspect";
+		justify-content: center;
+		grid-gap: 1%;
+		margin: auto;
+		padding: 10px;
+	}
+	#nmchbanner {
+		width: 100%;
+		margin-top: 10px;
+	}
+	.aspectimg {
+		overflow: 0px;
+		width: 300px;
+		height: 300px;
+		border: solid 0.2vw #036666;
+		text-align: center;
+	}
+	.aspecthead {
+		margin: 1px;
+		font-size: 2rem;
+	}
+	.aspecttext {
+		margin-top: 1px;
+		line-height: 120%;
+		text-align: justify;
+		font-size: 16px;
+		width: 98%;
+	}
+	.mentalhealthaspect {
+		grid-area: mentalhealthaspect;
+		min-width: 90vw;
+		justify-content: center;
+	}
+	.physicalhealthaspect {
+		grid-area: physicalhealthaspect;
+		min-width: 90vw;
+		justify-content: center;
+	}
+	.socioemotionalhealthaspect {
+		grid-area: socioemotionalhealthaspect;
+		min-width: 90vw;
+		justify-content: center;
+	}
+	.webpages {
+		margin: auto;
+		margin-top: 10vw;
+		width: 85vw;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+	.webpages img {
+		width: 300px;
+		height: 300px;
+		align-items: center;
+		justify-content: center;
+		align-content: center;
+		margin: auto;
+		padding: 10px;
+	}
+	.webpages button {
+		font-size: 18px;
+		width: 100%;
+	}
+	.webpages p {
+		text-align: justify;
+		font-size: 16px;
+	}
+	.webpages h2 {
+		font-size: 1.5rem;
+	}
+}

@@ -1,0 +1,163 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	z-index: 0;
+}
+
+nav {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	min-height: 10vh;
+	background-color: #036666;
+	font-family: 'Quicksand';
+	position: relative;
+	z-index: 2;
+}
+
+.logo {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 10vh;
+}
+
+.logo h1 {
+	color: white;
+	font-size: 7vh;
+}
+
+.logo img {
+	height: 10vh;
+	margin-right: 1vw;
+}
+
+.nav-links {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 58%;
+	height: 10vh;
+}
+
+nav a {
+	color: white;
+	text-decoration: none;
+}
+
+.nav-links a {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	font-size: 18px;
+	color: white;
+	text-decoration: none;
+	padding: 0.6vw;
+	border-radius: 0.29vw;
+}
+
+.nav-links li {
+	list-style: none;
+	align-items: center;
+}
+
+.nav-links a:hover {
+	background-color: #ddd;
+	color: black;
+}
+
+.nav-links a.active {
+	background-color: dodgerblue;
+	color: white;
+}
+
+.burger {
+	display: none;
+}
+
+.burger div {
+	width: 20px;
+	height: 2px;
+	background-color: white;
+	margin: 5px;
+	transition: all 0.5s ease;
+}
+
+@media screen and (max-width:768px) {
+	body {
+		overflow-x: hidden;
+		position: static;
+	}
+	.logo img {
+		display: none;
+	}
+	.nav-links {
+		position: absolute;
+		right: 0px;
+		height: 92vh;
+		top: 8vh;
+		background-color: #036666;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 50%;
+		transform: translateX(100%);
+		transition: transform 0.5s ease-in;
+	}
+	.nav-links li {
+		opacity: 0;
+		font-size: 20px;
+	}
+	.nav-links a:hover {
+		background-color: #036666;
+		color: white;
+		animation-duration: .3s;
+		animation-name: textFadeIn;
+		animation-timing-function: cubic-bezier(.71, .55, .62, 1.57);
+	}
+	.nav-links a.active {
+		background-color: #036666;
+		color: white;
+	}
+	.burger {
+		display: block;
+		cursor: pointer;
+	}
+}
+
+.nav-active {
+	transform: translateX(0%)
+}
+
+@keyframes navLinkFade {
+	from {
+		opacity: 0;
+		transform: translateX(50px);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+
+@keyframes textFadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.toggle .line1 {
+	transform: rotate(-45deg) translate(-5px, 5px)
+}
+
+.toggle .line2 {
+	opacity: 0;
+}
+
+.toggle .line3 {
+	transform: rotate(45deg) translate(-5px, -5px)
+}

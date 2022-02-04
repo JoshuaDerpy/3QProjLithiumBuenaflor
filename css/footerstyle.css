@@ -1,0 +1,451 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+footer {
+	background-color: #036666;
+	padding: 0.5vw 1vw 1vw 1vw;
+}
+
+.navlink {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	color: white;
+	font-size: 0.5vw;
+	gap: 1vw;
+}
+
+ul.socmedlinks {
+	text-align: center;
+	display: block;
+	margin: auto;
+}
+
+#smlist {
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+	width: 40%;
+	margin: 1vh auto;
+	text-align: center;
+}
+
+.logolink {
+	width: 56px;
+	height: 56px;
+}
+
+#smlist li,
+#smlist a {
+	display: flex;
+	justify-content: space-around;
+}
+
+.sml-item {
+	display: flex;
+	justify-content: space-around;
+}
+
+#fb-logo {
+	width: 56px;
+	height: 56px;
+	background: url('../images/socmedlogos.png') -15px -15px;
+}
+
+#yt-logo {
+	width: 56px;
+	height: 56px;
+	background: url('../images/socmedlogos.png') -531px -15px;
+}
+
+#twt-logo {
+	width: 56px;
+	height: 56px;
+	background: url('../images/socmedlogos.png') -359px -15px;
+}
+
+#ig-logo {
+	width: 56px;
+	height: 56px;
+	background: url('../images/socmedlogos.png') -187px -15px;
+}
+
+#fb-logo:hover {
+	background: url('../images/socmedlogos.png') -101px -15px;
+}
+
+#yt-logo:hover {
+	background: url('../images/socmedlogos.png') -617px -15px;
+}
+
+#twt-logo:hover {
+	background: url('../images/socmedlogos.png') -445px -15px;
+}
+
+#ig-logo:hover {
+	background: url('../images/socmedlogos.png') -273px -15px;
+}
+
+.two-bottom {
+	color: white;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	font-size: 16px;
+	background-color: #036666;
+}
+
+.two-bottom h1 {
+	font-family: 'Quicksand';
+	font-size: 2.5rem;
+	margin: auto!important;
+}
+
+.two-bottom p {
+	font-family: 'Caveat';
+	font-size: 1rem;
+	text-align: center;
+	margin: auto!important;
+}
+
+.navlink {
+	display: flex;
+	background-color: #036666;
+	align-items: center;
+	text-align: center;
+	justify-content: space-around;
+	width: 80%;
+	margin: 1vw auto;
+}
+
+.navlink a {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+	margin-right: 1vw;
+	min-width: 12vw;
+	padding: 0.87vw;
+	text-decoration: none;
+	font-size: 1.4vw;
+	line-height: normal;
+	border-radius: 0.29vw;
+	font-family: "Quicksand";
+	color: white;
+}
+
+.navlink a:hover {
+	background-color: #ddd;
+	color: black;
+}
+
+.navlink a.active {
+	background-color: dodgerblue;
+	color: white;
+}
+
+hr {
+	margin-top: auto;
+	background-color: #67b99a;
+	border: 1px solid #67b99a;
+	border-radius: 5px;
+	display: flex;
+}
+
+#hr {
+	background: none;
+	clear: both;
+	float: none;
+	height: 1px;
+	border: none;
+	margin: -1px 0;
+}
+
+@media only screen and (max-width:800px) {
+	#smlist li,
+	#smlist a {
+		display: inline-block;
+		margin-right: 2px;
+	}
+	#fb-logo {
+		width: 45px;
+		height: 45px;
+		background: url('../images/socmedlogos-mobile.png') -5px -5px;
+	}
+	#yt-logo {
+		width: 45px;
+		height: 45px;
+		background: url('../images/socmedlogos-mobile.png') -335px -5px;
+	}
+	#twt-logo {
+		width: 45px;
+		height: 45px;
+		background: url('../images/socmedlogos-mobile.png') -225px -5px;
+	}
+	#ig-logo {
+		width: 45px;
+		height: 45px;
+		background: url('../images/socmedlogos-mobile.png') -115px -5px;
+	}
+	#fb-logo:hover {
+		background: url('../images/socmedlogos-mobile.png') -60px -5px;
+	}
+	#yt-logo:hover {
+		background: url('../images/socmedlogos-mobile.png') -390px -5px;
+	}
+	#twt-logo:hover {
+		background: url('../images/socmedlogos-mobile.png') -280px -5px;
+	}
+	#ig-logo:hover {
+		background: url('../images/socmedlogos-mobile.png') -170px -5px;
+	}
+	.sml-item {
+		margin-right: 2px;
+	}
+	.logolink {
+		width: 45px;
+		height: 45px;
+		display: inline-block;
+	}
+	.navlink {
+		height: 8vh;
+		align-items: center;
+	}
+	.navlink a {
+		font-size: 12px;
+		line-height: normal;
+		border-radius: 0.29vw;
+		color: white;
+		width: 30%;
+	}
+}
+
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+footer {
+	background-color: #036666;
+	padding: 0.5vw 1vw 1vw 1vw;
+}
+
+.navlink {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	color: white;
+	font-size: 0.5vw;
+	margin-left: 5vw;
+}
+
+ul.socmedlinks {
+	text-align: center;
+	display: block;
+	margin: auto;
+}
+
+#smlist {
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+	width: 40%;
+	margin: 1vh auto;
+	text-align: center;
+}
+
+.logolink {
+	width: 56px;
+	height: 56px;
+}
+
+#smlist li,
+#smlist a {
+	display: flex;
+	justify-content: space-around;
+}
+
+.sml-item {
+	display: flex;
+	justify-content: space-around;
+}
+
+#fb-logo {
+	width: 56px;
+	height: 56px;
+	background: url('../images/socmedlogos.png') -15px -15px;
+}
+
+#yt-logo {
+	width: 56px;
+	height: 56px;
+	background: url('../images/socmedlogos.png') -531px -15px;
+}
+
+#twt-logo {
+	width: 56px;
+	height: 56px;
+	background: url('../images/socmedlogos.png') -359px -15px;
+}
+
+#ig-logo {
+	width: 56px;
+	height: 56px;
+	background: url('../images/socmedlogos.png') -187px -15px;
+}
+
+#fb-logo:hover {
+	background: url('../images/socmedlogos.png') -101px -15px;
+}
+
+#yt-logo:hover {
+	background: url('../images/socmedlogos.png') -617px -15px;
+}
+
+#twt-logo:hover {
+	background: url('../images/socmedlogos.png') -445px -15px;
+}
+
+#ig-logo:hover {
+	background: url('../images/socmedlogos.png') -273px -15px;
+}
+
+.two-bottom {
+	color: white;
+	text-align: center;
+	font-size: 16px;
+	background-color: #036666;
+}
+
+.two-bottom h1 {
+	font-family: 'Quicksand';
+	font-size: 2.5rem;
+	margin: auto!important;
+}
+
+.two-bottom p {
+	font-family: 'Caveat';
+	font-size: 1rem;
+	text-align: center;
+	margin: auto!important;
+}
+
+.navlink {
+	display: flex;
+	background-color: #036666;
+	align-items: center;
+	text-align: center;
+	justify-content: space-around;
+	width: 80%;
+	margin: 1vw auto;
+}
+
+.navlink a {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+	margin-right: 1vw;
+	min-width: 12vw;
+	padding: 0.87vw;
+	text-decoration: none;
+	font-size: 1.4vw;
+	line-height: normal;
+	border-radius: 0.29vw;
+	font-family: "Quicksand";
+	color: white;
+}
+
+.navlink a:hover {
+	background-color: #ddd;
+	color: black;
+}
+
+.navlink a.active {
+	background-color: dodgerblue;
+	color: white;
+}
+
+hr {
+	margin-top: auto;
+	background-color: #67b99a;
+	border: 1px solid #67b99a;
+	border-radius: 5px;
+	display: flex;
+}
+
+#hr {
+	background: none;
+	clear: both;
+	float: none;
+	height: 1px;
+	border: none;
+	margin: -1px 0;
+}
+
+@media only screen and (max-width:800px) {
+	#smlist li,
+	#smlist a {
+		display: inline-block;
+		margin-right: 2px;
+	}
+	#fb-logo {
+		width: 45px;
+		height: 45px;
+		background: url('../images/socmedlogos-mobile.png') -5px -5px;
+	}
+	#yt-logo {
+		width: 45px;
+		height: 45px;
+		background: url('../images/socmedlogos-mobile.png') -335px -5px;
+	}
+	#twt-logo {
+		width: 45px;
+		height: 45px;
+		background: url('../images/socmedlogos-mobile.png') -225px -5px;
+	}
+	#ig-logo {
+		width: 45px;
+		height: 45px;
+		background: url('../images/socmedlogos-mobile.png') -115px -5px;
+	}
+	#fb-logo:hover {
+		background: url('../images/socmedlogos-mobile.png') -60px -5px;
+	}
+	#yt-logo:hover {
+		background: url('../images/socmedlogos-mobile.png') -390px -5px;
+	}
+	#twt-logo:hover {
+		background: url('../images/socmedlogos-mobile.png') -280px -5px;
+	}
+	#ig-logo:hover {
+		background: url('../images/socmedlogos-mobile.png') -170px -5px;
+	}
+	.sml-item {
+		margin-right: 2px;
+	}
+	.logolink {
+		width: 45px;
+		height: 45px;
+		display: inline-block;
+	}
+	.navlink {
+		height: 8vh;
+		align-items: center;
+	}
+	.navlink a {
+		font-size: 12px;
+		line-height: normal;
+		border-radius: 0.29vw;
+		color: white;
+		width: 30%;
+	}
+}
